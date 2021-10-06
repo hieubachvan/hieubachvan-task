@@ -1,0 +1,20 @@
+.root {
+    
+    border: 1px solid rgb(var(--venia-global-color-text));
+    border-radius: 4px;
+    height: 2rem;
+    min-width: 3rem;
+    padding: 0 0.5rem;
+}
+
+.root_selected {
+   
+    background-color: rgb(var(--venia-global-color-text));
+    color: white;
+}
+.root_focused {
+    
+}
+.root_selected_focused {
+
+}

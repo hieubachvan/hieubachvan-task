@@ -1,0 +1,10 @@
+.banner-home-rtl {
+    .carousel {
+        direction: ltr;
+    }
+    .banner-item {
+        img {
+            width: 100%;
+        }
+    }
+}

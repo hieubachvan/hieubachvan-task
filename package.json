@@ -12,7 +12,8 @@
     "packages/upward-js",
     "packages/upward-spec",
     "packages/venia-concept",
-    "packages/venia-ui"
+    "packages/venia-ui",
+    "packages/siminia"
   ],
   "author": "Magento Commerce",
   "license": "SEE LICENSE IN LICENSE.txt",
@@ -21,6 +22,10 @@
     "url": "https://github.com/magento/pwa-studio/issues"
   },
   "scripts": {
+    "build": "yarn venia run build && yarn run build:siminia",
+    "build:siminia": "yarn workspace @simicart/siminia run build",
+    "watch:siminia": "yarn workspace @simicart/siminia run watch",
+    "stage:siminia": "yarn workspace @simicart/siminia run start",
     "build": "yarn venia run build",
     "build:dev": "yarn venia run build:dev",
     "clean:all": "yarn workspaces run -s clean && rimraf ./node_modules",
